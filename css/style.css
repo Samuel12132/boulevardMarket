@@ -1,0 +1,275 @@
+@import url(../css/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "MS", sans-serif;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background: #282828;
+    padding: 6px 0;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav-logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.header__nav-logo img {
+    width: 100%;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav-item {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header__nav-item a {
+    color: #fff;
+}
+
+.header__nav-right {
+    display: flex;
+}
+
+.header__nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__nav-icons_icon-img {
+    max-width: 17px;
+    width: 100%;
+}
+
+.header__nav-icons_icon-img img {
+    width: 100%;
+}
+
+.banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #151515 100%), url(../img/headerBg.png) no-repeat center/cover;
+    height: 700px;
+
+}
+
+.banner__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__title {
+    font-family: "PO", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+.banner__link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.banner__link-p {
+    font-family: "MS", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #171718;
+}
+
+.banner__link img {
+    max-width: 16px;
+    width: 100%;
+    color: #171718;
+}
+
+.desc {
+    background: #151515;
+
+}
+
+.desc__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.desc__text {
+    font-family: "MS", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+
+.desc__wrap img {
+    max-width: 552px;
+    width: 100%;
+}
+
+.airBlack {
+    background: #151515;
+
+}
+
+.airBlack__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    gap: 88px;
+}
+
+.airBlack__text {
+    font-family: "MS", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+
+}
+
+.airBlackc__wrap img {
+    max-width: 458px;
+    width: 100%;
+}
+
+.airPro {
+    background: #151515;
+    padding-top: 50px;
+}
+
+.airPro__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 88px;
+}
+
+.airPro__text-left {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+}
+.airPro__text-right {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+
+.airPro__item-left,
+.airPro__item-right {
+    position: relative;
+    color: #fff;
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    max-width: 333px;
+    width: 100%;
+}
+
+.airPro__text-left,
+.airPro__text-right {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.airPro__img {
+    max-width: 268px;
+    width: 100%;
+    height: 376px;
+}
+
+.airPro__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.airPro__item-left::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -90px; /* увеличили отступ */
+    transform: translateY(-50%);
+    width: 62px;
+    height: 1px;
+    background: #fff;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.airPro__item-right::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -70px; /* можно тоже увеличить, например -90px */
+    transform: translateY(-50%);
+    width: 62px;
+    height: 1px;
+    background: #fff;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+
+.airPro__item-left::after {
+    right: -90px; /* увеличили отступ */
+}
+
+.airPro__item-right::before {
+    left: -90px; /* можно тоже увеличить, например -90px */
+}
+
+.airPro__item-left:hover::after,
+.airPro__item-right:hover::before {
+    opacity: 1;
+}
