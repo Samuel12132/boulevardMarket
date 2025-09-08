@@ -194,6 +194,7 @@
     text-align: right;
     color: #fff;
 }
+
 .airPro__text-right {
     font-family: "MS", sans-serif;
     font-weight: 700;
@@ -238,7 +239,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: -90px; /* увеличили отступ */
+    right: -90px;
+    /* увеличили отступ */
     transform: translateY(-50%);
     width: 62px;
     height: 1px;
@@ -251,7 +253,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: -70px; /* можно тоже увеличить, например -90px */
+    left: -70px;
+    /* можно тоже увеличить, например -90px */
     transform: translateY(-50%);
     width: 62px;
     height: 1px;
@@ -262,14 +265,124 @@
 
 
 .airPro__item-left::after {
-    right: -90px; /* увеличили отступ */
+    right: -90px;
+    /* увеличили отступ */
 }
 
 .airPro__item-right::before {
-    left: -90px; /* можно тоже увеличить, например -90px */
+    left: -90px;
+    /* можно тоже увеличить, например -90px */
 }
 
 .airPro__item-left:hover::after,
 .airPro__item-right:hover::before {
     opacity: 1;
+}
+
+.phones {
+    background: #151515;
+    padding-top: 80px;
+    padding-bottom: 56px;
+}
+
+.phones__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.phone-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+    width: 100%;
+    gap: 10px;
+}
+
+.phone-card__title {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+}
+
+.phone-card__img {
+    max-width: 128px;
+    max-height: 168px;
+}
+
+.phone-card__img {
+    height: 100%;
+}
+
+.phone-card__price {
+    font-family: "MS", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.phone-card__btn {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #151515;
+    color: #fff;
+    padding: 8px 58px;
+}
+
+.footer {
+    background: #282828;
+    padding: 82px 0;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav-left .footer__nav-logo {
+    max-width: 100px;
+    width: 100%;
+}
+
+.footer__nav-logo img {
+    width: 100%;
+}
+
+.footer__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__nav-item {
+    font-family: "MS", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+.footer__nav-link {
+    color: #fff;
+}
+
+.footer__nav-payments {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__nav-payment {
+    max-width: 70px;
+    width: 100%;
 }
